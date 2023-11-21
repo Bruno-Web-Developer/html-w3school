@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <hr />
+    <p>
+      An HTML form is used to collect user input. The user input is most often
+      sent to a server for processing.
+    </p>
+    <hr />
+    <div class="exemplo">
+      <h3>Example</h3>
+      <fieldset>
+        <form action="#">
+          <label for="name">First Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="l-name">Last Name:</label><br />
+          <input type="text" id="l-name" name="l-name" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </fieldset>
+    </div>
+    <hr />
+    <h2>The form Element</h2>
+    <p>
+        The HTML <b class="red">form</b> element is used to create an HTML form for user input:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+               &lt;form> <br>
+                    &emsp;. <br>
+                    &emsp;form elements <br>
+                    &emsp;. <br>
+               &lt;/form> 
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        The <b class="red">form</b> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+    </p>
+    <hr>
+    <h2>The input Element</h2>
+    <p>
+        The HTML <b class="red">input</b> element is the most used form element. <br><br>
+        An <b class="red">input</b> element can be displayed in many ways, depending on the <b class="red">type</b> attribute. <br><br>
+        Here are some examples:
+    </p>
+    <table class="t-zebra">
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>Displays a single-line text input field.</td>
+        </tr>
+        <tr>
+            <td>radio</td>
+            <td>Displays a radio button (for selecting one of many choices)</td>
+        </tr>
+        <tr>
+            <td>checkbox</td>
+            <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+        </tr>
+        <tr>
+            <td>submit</td>
+            <td>Displays a submit button (for submitting the form)</td>
+        </tr>
+        <tr>
+            <td>button</td>
+            <td>Display a clickable button</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Text Fields</h2>
+    <p>
+        The <b class="red">type='text'</b> defines a single-line input field for text input.
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <p>
+            A form with input field for text:
+        </p>
+        <fieldset>
+            &lt;form> <br>
+                &emsp;&lt;label for="fname">First name:
+                &lt;/label>&lt;br> <br>
+                &emsp;&lt;input type="text" id="fname" name="fname">&lt;br> <br>
+                &emsp;&lt;label for="lname">Last name:&lt;/label>&lt;br> <br>
+                &emsp;&lt;input type="text" id="lname" name="lname"> <br>
+            &lt;/form>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <b>Note:</b> the form itself is not visible. Also note that the default width of an input field is 20 characters.
+    </div>
+    <hr>
+    <h2>The label Element</h2>
+    <p>
+        Notice the use of the <b class="red">label</b> element in the example above. <br><br>
+        The <b class="red">label</b> tag defines a label for many form elements. <br><br>
+        The <b class="red">label</b> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element. <br><br>
+        The <b class="red">label</b> element also helps users who have difficulty clicking on very small region (such as radio buttons or checkboxes) - because when the user clicks the text within the <b class="red">label</b> element, it toggles the radio button/checkbox. <br><br>
+        The <b class="red">for</b> attribute of the <b class="red">label</b>  tag should be equal to the <b class="red">id</b>attribute of the <b class="red">input</b> element to bind them together.
+    </p>
+    <hr>
+    <h2>Radio Buttons</h2>
+    <p>
+        The <b class="red">type='radio'</b> defines a radio button. <br><br>
+        Radio Buttons let a user select ONE of a limted number of choices.
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <p>A form with raio buttons:</p>
+        <fieldset>
+            &lt;p>Choose your favorite Web language:&lt;/p> <br><br>
+                &lt;form> <br>
+                &emsp;&lt;input type="radio" id="html" name="fav_language" value="HTML"> 
+                &lt;label for="html">HTML&lt;/label>&lt;br> <br>
+                &emsp;&lt;input type="radio" id="css" name="fav_language" value="CSS">
+                &lt;label for="css">CSS&lt;/label>&lt;br> <br>
+                &emsp;&lt;input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                &lt;label for="javascript">JavaScript&lt;/label> <br>
+                &lt;/form>
+        </fieldset>
+    </div>
+  </body>
+</html>

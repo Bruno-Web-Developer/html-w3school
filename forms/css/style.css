@@ -1,0 +1,78 @@
+html {
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+hr {
+    border: 1.5px solid green;
+    margin: 10px auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Caixa Exemplo */
+
+.exemplo {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color:powderblue;
+    border-radius: 10px;
+}
+
+.exemplo h3 {
+    margin: 3px;
+}
+
+.exemplo p {
+    margin-left: 4%;
+}
+
+.exemplo fieldset {
+    width: 90%;
+    margin: 5px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Palavras Destaques Vermelho */
+.red {
+    color: red;
+    background-color: aquamarine;
+    padding: .7px 3px;
+    border-radius: 5px;
+}
+
+/* Tabelas Zebra */
+
+.t-zebra {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.t-zebra th,td {
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+
+.t-zebra tr:nth-child(even) {
+    background-color: cyan;
+}
+
+.t-zebra td:nth-child(1) {
+    text-align: center;
+    font-weight: 800;
+}
+
+/* Caixa Nota */
+
+.nota {
+    background-color: tomato;
+    margin-top: 20px;
+    padding: 10px;border-radius: 10px;
+}
