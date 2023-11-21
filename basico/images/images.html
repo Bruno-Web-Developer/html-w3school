@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Imagens</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HTML Images</h1>
+
+    <hr>
+    <p>Images can improve the design and the appearance of a web page.</p>
+    <hr>
+
+    <div class="imagem">
+        <img src="imagens/jametlene-reskp-fCDi2xhXUEY-unsplash.jpg" alt="pássaro negro na neve">
+    </div>
+
+    <hr>
+    <h2>HTML Images Syntax</h2>
+    <p>
+        The HTML <b class="red">img</b> tag is used to embed an image in a web page
+    </p>
+    <p>
+        Images are not technically inserted into a web page; images are linked to web pages. The <b class="red">img</b>
+        tag creates a holding space for the reference image.
+    </p>
+    <p>
+        The <b class="red">img</b> tag is empty, it contains attributes only, and does not have a closing tag.
+    </p>
+    <p>
+        the <b class="red">img</b> tag has two required attributes:
+    </p>
+    <ul>
+        <li>
+            src - Specifies the path to the image
+        </li>
+        <li>
+            alt - Specifies an alternative text for the image
+        </li>
+    </ul>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Syntax</legend>
+            <h3>&lt;img src="url" alt="alternativeText"&gt;</h3>
+        </fieldset>
+    </div>
+    <hr>
+
+
+    <h2>The src Attributes</h2>
+
+    <p>
+        The required <b class="red">src</b> attributes specifies the path (URL) to the image.
+    </p>
+    <p>
+        <b>Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and
+            inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation
+            the the web, otherwise your visitors will get a broken link icon. The broken link icon and the <b
+                class="red">alt</b></b> text are show if the browser cannot find the image.
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt
+            </h3>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>The alt attributes</h2>
+
+    <p>
+        The required <b class="red">alt</b> attributes provides an alternate texto for an image, if the user for some
+        resaon cannot view it (because of slow connection, an error in the src attributes, or if the user uses a screen
+        reaer).
+    </p>
+    <p>
+        The value of the <b class="red">alt</b> attributes should escribe the image:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;img src="wrongname.gif" alt="Flowers in Chania"&gt
+            </h3>
+        </fieldset>
+    </div>
+    <p>
+        If a browser cannot find an image, it will display the value of the alt attributes.
+    </p>
+    <hr>
+
+    <h2>Image Size - Width and Height</h2>
+
+    <p>
+        You can use the <b class="red">style</b> attributes to specify the width and height of an image
+    </p>
+    <div class="caixa-dupla">
+        <h5>
+            &lt;img src="img_girl.jpg" alt="Black bird with open wings" style="width:500px;height:600px;"&gt;
+        </h5>
+        <div class="imagem">
+            <img src="imagens/jonny-gios-HOtxVOLs6ZE-unsplash.jpg" style="width: 500px;height: 600px;" alt="">
+        </div>
+    </div>
+    <div class="caixa-dupla">
+        <h5>
+            &lt;img src="img_girl.jpg" alt="Black bird with open wings" width="500" height="600"&gt;
+        </h5>
+        <div class="imagem">
+            <img src="imagens/jonny-gios-HOtxVOLs6ZE-unsplash.jpg" alt="" width="500" height="600">
+        </div>
+    </div>
+
+    <p>
+        The <b class="red">width</b> and <b class="red">height</b> attributes always define the width and height of the
+        image pixels.
+    </p>
+    <div class="nota">
+        <p>
+            <b>Note:</b> Always specify the width and height of a image. If width and height are not specified, the web
+            page might flicker while the image loads.
+        </p>
+    </div>
+    <hr>
+
+    <h2>Width and Height, or Style?</h2>
+
+    <p>
+        the <b class="red">width</b>, <b class="red">height</b>, and <b class="red">style</b> attributes are all valid
+        in HTML.
+    </p>
+    <p>
+        However, we suggest using the style attribute. It prevents styles sheets from changing the size of images.
+    </p>
+    <hr>
+
+    <h2>Images in Another Folder</h2>
+
+    <p>
+        If you have images in a sub-folder, ypu must include the folder name in the <b class="red">src</b> sttribute:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>Images on Another Server/Website</h2>
+
+    <p>
+        Some web sites point to an image on another server.
+    </p>
+    <p>
+        To point to an image on another server, you must specify an absolute (full) URL in the src attribute.
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <b>Notes on external images:</b> External images might be under copyright. If you do not get permission to use
+        it, you may be in violation of copyright laws. In addition, you cannot control external images; they can
+        suddenly be removed or changed.
+    </div>
+    <hr>
+
+    <h2>Animated Image</h2>
+
+    <p>HTML allows animated GIFs</p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;img src="imagens/bell-pepper-8079_512.gif" alt="#" style="width: 100px;"&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <div class="imagem">
+        <img src="imagens/bell-pepper-8079_512.gif" alt="" style="width: 100px;">
+    </div>
+    <hr>
+
+    <h2>Image as a Link</h2>
+
+    <p>
+        To use an image as a link, put the <b class="red">img</b> tag inside the <b class="red">a</b> tag:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Exemple</legend>
+            <h3>
+                &lt;a href="default.asp"&gt;
+                &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
+                &lt;/a&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>Image Floating</h2>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;p&gt;
+                &lt;img src="#" alt="#" style="float:right;width:50px;height:50px;"&gt;
+                The image will float to the right of the text.
+                &lt;/p&gt;
+                <br><br>
+                &lt;p&gt;
+                &lt;img src="#" alt="#" style="float:left; width:50px; height:50px;"&gt;
+                The image will float to the left of the text.
+                </p&gt; </h3>
+        </fieldset>
+    </div>
+    <p>
+        <img src="imagens/jonny-gios-HOtxVOLs6ZE-unsplash.jpg" alt="#" style="float: right;width: 100px;height: 80px;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, in!
+    </p>
+    <br style="clear: both;">
+    <hr>
+
+    <h2>Common Image Formats</h2>
+
+    <p>
+        Here are the most common image file types, wich are supported in all browsers (Chrome, Edge, Firefox, Safari,
+        Opera):
+    </p>
+
+    <table style="border: 1px solid black; margin: auto;width: 600px;">
+        <thead>
+            <tr>
+                <th><b>Abbreviation</b></th>
+                <th><b>File Format</b></th>
+                <th><b>File Extension</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>APNG</td>
+                <td>Animated Portable Network Graphics</td>
+                <td>.apng</td>
+            </tr>
+            <tr>
+                <td>GIG</td>
+                <td>Graphics Interchange Format</td>
+                <td>.gif</td>
+            </tr>
+            <tr>
+                <td>ICO</td>
+                <td>Microsoft Icon</td>
+                <td>.ico, .cur</td>
+            </tr>
+            <tr>
+                <td>JPEG</td>
+                <td>Joint Photographic Expert Group</td>
+                <td>.jpg, .jpeg, .pjpeg, .pjp</td>
+            </tr>
+            <tr>
+                <td>PNG</td>
+                <td>Portable Network Graphics</td>
+                <td>.png</td>
+            </tr>
+            <tr>
+                <td>SVG</td>
+                <td>Scalable Vector Graphics</td>
+                <td>.svg</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h2>Chapter Summary</h2>
+
+    <ul>
+        <li>
+            Use the HTML <b class="red">img</b> element to define an image
+        </li>
+        <li>
+            Use the HTML <b class="red">src</b> attribute to define the URL of the image
+        </li>
+        <li>
+            Use the HTML <b class="red">alt</b> attribute to define an alternate text for an image, if it cannot
+            displayed.
+        </li>
+        <li>
+            Use HTML b.redwidth and <b class="red">height</b> attributes or the CSS <b class="red">width</b> and <b
+                class="red">height</b> properties to define the size of the image
+        </li>
+        <li>
+            Use the CSS <b class="red">float</b> property to let the image float to the left or to the right
+        </li>
+    </ul>
+
+    <div class="nota">
+        <p>
+            <b>Note:</b> Loading large images takes time, and can slow down your web page. Use images carefully.
+        </p>
+    </div>
+
+    <button style="margin-top: 10px;">
+        <a href="map.html" style="text-decoration: none;">Next</a>
+    </button>
+</body>
+
+</html>

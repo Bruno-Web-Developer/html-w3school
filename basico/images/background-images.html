@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Images</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .img-repeat {
+            background-image: url(
+                'imagens/wolfgang-hasselmann-ez9QVjdHg1A-unsplash.jpg'
+            );
+        }
+
+        .img-fixed-cover {
+            background-image: url('imagens/wolfgang-hasselmann-ez9QVjdHg1A-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Background Images</h1>
+    <hr>
+    <p>
+        A background image can be specifie for almost HTML element.
+    </p>
+    <hr>
+
+    <h2>Background Image on a HTML element</h2>
+
+    <p>
+        To add a background image on an HTML element, use the HTML <b class="red">style</b> attribute and the CSS b.redbackground-image> property:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>&lt;p style="bakground-image: url('img-name-path.jpg');"&gt;</h3>
+        </fieldset>
+    </div>
+
+    <p>
+        You can also specify the background image in the <b class="red">style</b> element, in the <b class="red">head</b> section:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <p>
+                Specify the background image in the <b class="red">style</b> element:
+            </p>
+            <h3>
+                &lt;style&gt;<br>
+                    &emsp;p {<br>
+                        &emsp;&emsp;background-image: url('img-name-path.jpg');<br>
+                    &emsp;} <br>
+                    &lt;style&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>Background Image on a Page</h2>
+    <p>
+        f you want the entire page to have a background image, you must specify the background image on the <b class="red">body</b> element:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <p>
+                Add a background image for the entire page:
+            </p>
+            <h3>
+                &lt;style&gt;<br>
+                    &emsp;body {<br>
+                        &emsp;&emsp;background-image: url('img-name-path.jpg');<br>
+                    &emsp;} <br>
+                    &lt;style&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>Background Repeat</h2>
+
+    <p>
+        If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end on the element:
+    </p>
+
+    <div class="img-repeat" style="width: 1000px; height: 700px;margin: auto;">
+    </div>
+
+    <p>
+        To avoid the background image from repeating itself, set the <b class="red">background-repeat</b> property to <b class="red">no-repeat</b>.
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <p>
+                Add a background image for the entire page:
+            </p>
+            <h3>
+                &lt;style&gt;<br>
+                &emsp;body {<br>
+                &emsp;&emsp;background-image: url('img-name-path.jpg');<br>
+                &emsp;&emsp;background-repeat: no-repeat; <br>
+                &emsp;} <br>
+                &lt;style&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>Background Cover</h2>
+
+    <p>
+        If you want the background image to cover the entire element, you can set the <b class="red">background-size</b> property to <b class="red">cover</b>.
+    </p>
+    <p>
+        Also, to make sure the entire element is always covered, det the <b class="red">background-attachment</b> property to <b class="red">fixed</b>:
+    </p>
+    <p>
+        This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions):
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <p>
+                Add a background image for the entire page:
+            </p>
+            <h3>
+                &lt;style&gt;<br>
+                &emsp;body {<br>
+                &emsp;&emsp;background-image: url('img-name-path.jpg');<br>
+                &emsp;&emsp;background-repeat: no-repeat; <br>
+                &emsp;&emsp;background-attachment: fixed;<br>
+                &emsp;&emsp;background-size: cover;<br>
+                &emsp;} <br>
+                &lt;style&gt;
+            </h3>
+        </fieldset>
+    </div>
+
+    <h4>Image background-size: cover</h4>
+    <div class="img-fixed-cover" style="width: 700px;height:500px;margin: auto;border: 1px solid red;">
+    </div>
+
+    <p>
+        If you want the background image to stretch to fit the entire element, you can set the <b class="red">background-size</b> property to <b class="red">100% 100%</b>:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <p>
+                Add a background image for the entire page:
+            </p>
+            <h3>
+                &lt;style&gt;<br>
+                &emsp;body {<br>
+                &emsp;&emsp;background-image: url('img-name-path.jpg');<br>
+                &emsp;&emsp;background-repeat: no-repeat; <br>
+                &emsp;&emsp;background-attachment: fixed;<br>
+                &emsp;&emsp;background-size: 100% 100%;<br>
+                &emsp;} <br>
+                &lt;style&gt;
+            </h3>
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Sizes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HTML Table Sizes</h1>
+    <hr>
+    <p>
+        HTML tables can have different sizes for each column, row or the entire table.
+    </p>
+    <hr>
+    <div style="position: relative;width: 100%; margin: 8px auto;">
+        <div style="width: 25%;float: left;">
+            <table class="tabela7" width="95%">
+                <tr>
+                    <td class="td7" style="width: 15%;"></td>
+                    <td class="td7"></td>
+                    <td class="td7" style="width: 15%;"></td>
+                </tr>
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                </tr>
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 50%;float: left;">
+            <table class="tabela7" width="95%" style="margin-left: 2px;">
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7" style="width: 20%;"></td>
+                    <td class="td7"></td>
+                </tr>
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                </tr>
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 25%;float: left;">
+            <table class="tabela7" width="95%" style="margin-left: 2px;">
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7" style="width: 10%;"></td>
+                    <td class="td7" style="width: 10%;"></td>
+                </tr>
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                </tr>
+                <tr>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                    <td class="td7"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr style="clear: both;">
+
+    <p>
+        Use the <b class="red">style</b> attribute with the <b class="red">width</b> or <b class="red">height</b>
+        properties to specify the size of a table, row or collumn.
+    </p>
+    <hr>
+
+    <h2>Html Table Width</h2>
+
+    <p>
+        To set the width of a tabe, add the <b class="red">style</b> attribute to the <b class="red">table</b> element:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <caption>Set the width of the table to 100%</caption>
+            <pre>
+                &lt;table style="width:100%"&gt;
+                    &lt;tr&gt;
+                      &lt;th&gt;Firstname&lt;/th&gt;
+                      &lt;th&gt;Lastname&lt;/th&gt;
+                      &lt;th&gt;Age&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Jill&lt;/td&gt;
+                      &lt;td&gt;Smith&lt;/td&gt;
+                      &lt;td&gt;50&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Eve&lt;/td&gt;
+                      &lt;td&gt;Jackson&lt;/td&gt;
+                      &lt;td&gt;94&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+            </pre>
+        </fieldset>
+    </div>
+
+    <div class="nota">
+        <p>
+            <b>Note: </b>Using a percentage as the size unit for a width means how wide will this element be compared to
+            its parent element, which in this case is the <b class="red">body</b> element.
+        </p>
+    </div>
+
+    <hr>
+    <h2>HTML Table Column Width</h2>
+    <p>
+        To set the size of a specific columns, add the <b class="red">style</b> attribute on a <b class="red">th</b> or
+        <b class="red">td</b> element
+    </p>
+    <hr>
+    <h2>
+        HTML Tabl Row Height
+    </h2>
+
+    <p>
+        To set the height of a specific row, add the <b class="red">style</b> attribute on a table row element <b
+            class="red">tr</b>.
+    </p>
+
+    <button style="display: block;margin: 5px auto;"><a style="text-decoration: none;"
+            href="header.html">Next</a></button>
+</body>
+
+</html>

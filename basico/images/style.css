@@ -1,0 +1,75 @@
+body {
+    background-color: beige;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    text-align: center;
+}
+
+h5 {
+    letter-spacing: .5px;
+    background-color: aquamarine;
+}
+
+hr {
+    border: 1px solid green;
+}
+
+p {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+img {
+    align-items: center;
+    margin: 2px auto;
+}
+
+tbody tr {
+    text-align: center;
+    height: 25px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: azure;
+}
+
+ul li {
+    margin-top: 8px;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.red {
+    color: red;
+    background-color: lightgray;
+    padding: 1px;
+}
+
+.exemplo fieldset {
+    background-color: lightgrey;
+    margin-bottom: 7px;
+}
+
+.exemplo h3 {
+    padding: 8px;
+    letter-spacing: 3px;
+    text-align: left;
+    background-color: aquamarine;
+    color: black;
+}
+
+.caixa-dupla {
+    display: inline-block;
+    width: 48%;
+}
+
+.nota {
+    background-color: bisque;
+    padding: 8px;
+}

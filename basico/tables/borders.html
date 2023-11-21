@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Borders</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HTML Table Borders</h1>
+    <hr>
+    <p>
+        HTML tables can have borders of different styles and shapes.
+    </p>
+    <hr>
+
+    <h2>How To Add A Border</h2>
+
+    <p>
+        To add a border, use the css <b class="red">border</b> property on <b class="red">table</b>, <b
+            class="red">th</b> and <b class="red">td</b> elements:
+    </p>
+
+    <table class="tabela1">
+        <tr>
+            <th class="th1"></th>
+            <th class="th1"></th>
+            <th class="th1"></th>
+        </tr>
+        <tr>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+        </tr>
+        <tr>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+        </tr>
+    </table>
+</div>
+        
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                table, th, td {
+                    border: 1px solid black;
+                }
+            </pre>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <h2>Collapse Table Borders</h2>
+
+    <p>
+        To avoid having double borders like in the example above, set the CSS <b class="red">border-collape</b> property
+        to <b class="red">collapse</b>.
+    </p>
+    <p>
+        This will make the borders collapse into a single border:
+    </p>
+
+    <table class="tabela2">
+        <tr>
+            <th class="th2"></th>
+            <th class="th2"></th>
+            <th class="th2"></th>
+        </tr>
+        <tr>
+            <td class="td2"></td>
+            <td class="td2"></td>
+            <td class="td2"></td>
+        </tr>
+        <tr>
+            <td class="td2"></td>
+            <td class="td2"></td>
+            <td class="td2"></td>
+        </tr>
+    </table>
+
+
+    <div class="exemplo">
+        <fieldset>
+            <legen>Example</legen>
+            <pre>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+            </pre>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <h2>Style Table Borders</h2>
+
+    <p>
+        If you set a background color of each cell, and give the border a white color (the same as the document
+        background), you get the impression of an invisible border:
+    </p>
+
+    <table class="tabela3">
+        <tr>
+            <th class="th3"></th>
+            <th class="th3"></th>
+            <th class="th3"></th>
+        </tr>
+        <tr>
+            <td class="td3"></td>
+            <td class="td3"></td>
+            <td class="td3"></td>
+        </tr>
+        <tr>
+            <td class="td3"></td>
+            <td class="td3"></td>
+            <td class="td3"></td>
+        </tr>
+    </table>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                table, th, td {
+                    border: 1px solid white;
+                    border-collapse: collapse;
+                  }
+                  th, td {
+                    background-color: #96D4D4;
+                  }
+            </pre>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>Round Tables Borders</h2>
+    <p>
+        With the <b class="red">border-radius</b> property, the borders get rounded corners:
+    </p>
+
+    <table class="tabela4">
+        <tr>
+            <th class="th4"></th>
+            <th class="th4"></th>
+            <th class="th4"></th>
+        </tr>
+        <tr>
+            <td class="td4"></td>
+            <td class="td4"></td>
+            <td class="td4"></td>
+        </tr>
+        <tr>
+            <td class="td4"></td>
+            <td class="td4"></td>
+            <td class="td4"></td>
+        </tr>
+    </table>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                table, th, td {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                  }
+            </pre>
+        </fieldset>
+    </div>
+
+    <hr>
+    <p>
+        Skip the border around the table by leaving out <b class="red">table</b> from the css selector:
+    </p>
+
+    <table class="tabela5">
+        <tr>
+            <th class="th5"></th>
+            <th class="th5"></th>
+            <th class="th5"></th>
+        </tr>
+        <tr>
+            <td class="td5"></td>
+            <td class="td5"></td>
+            <td class="td5"></td>
+        </tr>
+        <tr>
+            <td class="td5"></td>
+            <td class="td5"></td>
+            <td class="td5"></td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Dotted Table Borders</h2>
+
+    <p>
+        With the <b class="red">border-style</b> pproperty, you can set the appearance of the border.
+    </p>
+
+    <p>
+        The following values are allowed:
+    </p>
+    <ul>
+        <li>
+            dotted
+        </li>
+        <li>dashed</li>
+        <li>solid</li>
+        <li>double</li>
+        <li>groove</li>
+        <li>ridge</li>
+        <li>inset</li>
+        <li>outset</li>
+        <li>none</li>
+        <li>hidder</li>
+    </ul>
+
+    <table class="tabela6">
+        <tr>
+            <th class="th6"></th>
+            <th class="th6"></th>
+            <th class="th6"></th>
+        </tr>
+        <tr>
+            <td class="td6"></td>
+            <td class="td6"></td>
+            <td class="td6"></td>
+        </tr>
+        <tr>
+            <td class="td6"></td>
+            <td class="td6"></td>
+            <td class="td6"></td>
+        </tr>
+    </table>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                th, td {
+                    border-style: dotted;
+                }
+            </pre>
+        </fieldset>
+    </div>
+
+    <button style="display: block;margin: 5px auto;"><a style="
+        text-decoration: none;" href="sizes.html">Next</a></button>
+    
+</body>
+
+</html>

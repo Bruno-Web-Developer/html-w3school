@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Headers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>HTML Table Headers</h1>
+  <hr>
+  <p>
+    HTML table can have headers for each column or row, or for many columns/rows.
+  </p>
+
+  <p>
+    Table headers are defined with <b class="red">th</b> elements. Each <b class="red">th</b> element represents a table
+    cell.
+  </p>
+
+  <div class="exemplo">
+    <fieldset>
+      <legend>Example</legend>
+      <pre>
+                &lt;table>
+                    &lt;tr>
+                      &lt;th>Firstname&lt;/th>
+                      &lt;th>Lastname&lt;/th>
+                      &lt;th>Age&lt;/th>
+                    &lt;/tr>
+                    &lt;tr>
+                      &lt;td>Jill&lt;/td>
+                      &lt;td>Smith&lt;/td>
+                      &lt;td>50&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                      &lt;td>Eve&lt;/td>
+                      &lt;td>Jackson&lt;/td>
+                      &lt;td>94&lt;/td>
+                    &lt;/tr>
+                  &lt;/table>
+            </pre>
+    </fieldset>
+  </div>
+
+  <table class="tabela8">
+    <tr>
+      <th class="th8">Firstname</th>
+      <th class="th8">Lastname</th>
+      <th class="th8">Age</th>
+    </tr>
+    <tr>
+      <td class="td8">Jill</td>
+      <td class="td8">Smith</td>
+      <td class="td8">50</td>
+    </tr>
+    <tr>
+      <td class="td8">Eve</td>
+      <td class="td8">Jackson</td>
+      <td class="td8"> 94</td>
+    </tr>
+  </table>
+
+  <hr>
+  <h2>Vertical Table Headers</h2>
+  <p>
+    To use the first column as table headers, define the first cell in each row as a <b class="red">th</b> element.
+  </p>
+
+  <div class="exemplo">
+    <fielddset>
+      <legend>Example</legend>
+      <pre>
+                &lt;table>
+                    &lt;tr>
+                      &lt;th>Firstname&lt;/th>
+                      &lt;td>Jill&lt;/td>
+                      &lt;td>Eve&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                      &lt;th>Lastname&lt;/th>
+                      &lt;td>Smith&lt;/td>
+                      &lt;td>Jackson&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                      &lt;th>Age&lt;/th>
+                      &lt;td>94&lt;/td>
+                      &lt;td>50&lt;/td>
+                    &lt;/tr>
+                  &lt;/table>
+            </pre>
+    </fielddset>
+  </div>
+
+  <table class="tabela8">
+    <tr>
+      <th class="th8">Firstname</th>
+      <td class="td8">Jill</td>
+      <td class="td8">Eve</td>
+    </tr>
+    <tr>
+      <th class="th8">Lastname</th>
+      <td class="td8">Smith</td>
+      <td class="td8">Jackson</td>
+    </tr>
+    <tr>
+      <th class="th8">Age</th>
+      <td class="td8">94</td>
+      <td class="td8">50</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h2>Align Table Headers</h2>
+
+  <p>
+    By default, table headers are bold and centered
+  </p>
+  <p>
+    To left-align the table headers, use the CSS <b class="red">text-align</b> property:
+  </p>
+  <hr>
+
+  <h2>Header for Multiple Columns</h2>
+  <p>
+    You can have a header that spans over two or more columns.
+  </p>
+
+  <table class="tabela2">
+    <tr>
+      <th colspan="2" class="th2">Name</th>
+      <th class="th2">Age</th>
+    </tr>
+    <tr>
+      <td class="td2">Jill</td>
+      <td class="td2">Smith</td>
+      <td class="td2">50</td>
+    </tr>
+    <tr>
+      <td class="td2">Eve</td>
+      <td class="td2">Jackson</td>
+      <td class="td2">94</td>
+    </tr>
+  </table>
+
+  <p>
+    To do this, use the <b class="red">colspan</b> attribute on the <b class="red">th</b> element:
+  </p>
+
+  <div class="exemplo">
+    <fieldset>
+      <legend>Example</legend>
+      <pre>
+            &lt;table>
+              &lt;tr>
+                &lt;th <b class="red">colspan</b>="2">Name&lt;/th>
+                &lt;th>Age&lt;/th>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Jill&lt;/td>
+                &lt;td>Smith&lt;/td>
+                &lt;td>50&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Eve&lt;/td>
+                &lt;td>Jackson&lt;/td>
+                &lt;td>94&lt;/td>
+              &lt;/tr>
+            &lt;/table>
+          </pre>
+    </fieldset>
+  </div>
+
+  <hr>
+  <h2>Table Caption</h2>
+
+  <p>
+    You can add a caption that serves as a heading for the entire table.
+  </p>
+
+  <table class="tabela2">
+    <caption>Monthly savings</caption>
+    <tr>
+      <th class="th2">Month</th>
+      <th class="th2">Saving</th>
+    </tr>
+    <tr>
+      <td class="td2">January</td>
+      <td class="td2">$100</td>
+    </tr>
+    <tr>
+      <td class="td2">February</td>
+      <td class="td2">$50</td>
+    </tr>
+  </table>
+
+  <div class="exemplo">
+    <fieldset>
+      <legend>Exa ple</legend>
+      <pre>
+        &lt;table style="width:100%">
+          &lt;caption>Monthly savings&lt;/caption>
+          &lt;tr>
+            &lt;th>Month&lt;/th>
+            &lt;th>Savings&lt;/th>
+          &lt;/tr>
+          &lt;tr>
+            &lt;td>January&lt;/td>
+            &lt;td>$100&lt;/td>
+          &lt;/tr>
+          &lt;tr>
+            &lt;td>February&lt;/td>
+            &lt;td>$50&lt;/td>
+          &lt;/tr>
+        &lt;/table>
+      </pre>
+    </fieldset>
+  </div>
+
+  <div class="nota">
+    <p>
+      <b>Note:</b> The <b class="red">caption</b> tag should be inserted immediately after the <b class="red">table</b> tag.
+    </p>
+  </div>
+
+  <button style="display: block;margin: 5px auto;"><a style="text-decoration: none;"
+    href="style.html">Next</a></button>
+</body>
+
+</html>

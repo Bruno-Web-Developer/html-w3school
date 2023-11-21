@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Padding & Spacing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HTML Padding & Spacing</h1>
+    <hr>
+    HTML tables can adjust the padding inside the cells, and also the space between the cells.
+    <hr>
+
+    <h2>HTML Table - Cell Padding</h2>
+    <p>
+        Cell padding is the space between the cell and the cell content. <br>
+        By default the padding is set to 0. <br>
+        To add padding on table cells, use the CSS <b class="red">padding</b> property:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                th, td {
+                    padding: 15px;
+                }
+            </pre>
+        </fieldset>
+    </div>
+
+    <table class="tabela1" style="margin-top: 10px;">
+        <tr>
+            <td class="td2" style="padding: 15px;">HELLO</td>
+            <td class="td2" style="padding: 15px;">WORLD</td>
+        </tr>
+        <tr>
+            <td class="td2" style="padding: 15px;">HELLO</td>
+            <td class="td2" style="padding: 15px;">WORLD</td>
+        </tr>
+    </table>
+
+    <p>
+        To add padding only above the content, use the <b class="red">padding-top</b> property. <br>
+        And the others sides with the <b class="red">padding-bottom</b>, <b class="red">padding-left</b>, and <b
+            class="red">padding-right</b> properties:
+    </p>
+    <hr>
+
+    <h2>HTML Table - Cell Spacing</h2>
+    <p>
+        Cell spacing is the space between each cell. <br>
+        By default the space between is set to 2px. <br>
+        to change the space between table cells, use the CSS <b class="red">border-spacing</b> property on the <b
+            class="red">table</b> element:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                table {
+                    border-spacing: 10px;
+                }
+            </pre>
+        </fieldset>
+    </div>
+
+    <table class="tabela1" style="margin-top: 10px;border-spacing: 10px;">
+        <tr>
+            <td class="td2"></td>
+            <td class="td2"></td>
+        </tr>
+        <tr>
+            <td class="td2"></td>
+            <td class="td2"></td>
+        </tr>
+    </table>
+
+    <h2>HTML Table - Colspan</h2>
+    <p>
+        To make a cell span over multiple columns, use the <b class="red">colspan</b> attribute:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                &lt;table>
+                    &lt;tr>
+                      &lt;th colspan="2">Name&lt;/th>
+                      &lt;th>Age&lt;/th>
+                    &lt;/tr>
+                    &lt;tr>
+                      &lt;td>Jill&lt;/td>
+                      &lt;td>Smith&lt;/td>
+                      &lt;td>43&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                      &lt;td>Eve&lt;/td>
+                      &lt;td>Jackson&lt;/td>
+                      &lt;td>57&lt;/td>
+                    &lt;/tr>
+                &lt;/table>    
+            </pre>
+        </fieldset>
+    </div>
+
+    <div class="nota">
+        <p>
+            <b>Note: </b>The value of the <b class="red">colspan</b> attribute represents the number of columns to span.
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>HTML Table - Rowsapn</h2>
+    <p>
+        To make a cell span over a multiple rows, use the <b class="red">rowspan</b> attribute:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                &lt;table>
+                    &lt;tr>
+                        &lt;th>Name&lt;/th>
+                        &lt;td>Jill&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;th <b class="red">rowspan="2"</b>>Phone&lt;/th>
+                        &lt;td>555-1234&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;td>555-8745&lt;/td>
+                    &lt;/tr>
+                &lt;/table>
+            </pre>
+        </fieldset>
+    </div>
+
+    <table class="tabela2" style="margin-top: 10px;">
+        <tr>
+            <th class="th2">Name</th>
+            <td class="td2">Jill</td>
+        </tr>
+        <tr>
+            <th class="th2" rowspan="2">Phone</th>
+            <td class="td2">555-1234</td>
+        </tr>
+        <tr>
+            <td class="td2">555-8745</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>HTML Table - Zebra Stripes</h2>
+
+    <p>
+        If you add a background-color on every other table row, you will get a nice zebra stripes effect.
+    </p>
+
+    <table>
+        <tr class="zebra">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr class="zebra">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr class="zebra">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr class="zebra">
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+                tr:nth-child(even) {
+                    background-color: #D6EEEE;
+                }
+            </pre>
+        </fieldset>
+    </div>
+
+    <div class="nota">
+        <p>
+            <b>Note: </b> If you use <b class="red">(odd)</b> instead of <b class="red">(even)</b>, the
+            styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.
+        </p>
+    </div>
+
+    <hr>
+    <h2>HTML Table - Vertical Zebra Stripes</h2>
+
+    <p>
+        To make vertical zebra stripes, style every other column, instead of every other row. <br>
+        Set the <b class="red">:nth-child(even)</b> for table data elements.
+    </p>
+    <div class="nota">
+        <p>
+            <b>Note: </b> put the <b class="red">:nth-child()</b> selector on both <b class="red">th</b> and
+        <b class="red">td</b> elements if yu want to have the styling on boths headers and regular table cells.
+        </p>
+    </div>
+</body>
+
+</html>

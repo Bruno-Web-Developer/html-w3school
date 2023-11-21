@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>HTML Image Maps</h1>
+    <hr>
+    <p>
+        With HTML image maps, you can create clickable areas on an image.
+    </p>
+    <hr>
+
+    <h2>Image Maps</h2>
+
+    <p>
+        The HTML <b class="red">map</b> tag defines an image map. An image maps is an image with clickables areas. The areas are defined with one or more <b class="red">area</b> tags.
+    </p>
+    <hr>
+
+    <h2>How Does it Work?</h2>
+    <p>
+        The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+    </p>
+    <p>
+        To create an image map you need an image, and some HTML code that describes the clickablle areas.
+    </p>
+    <hr>
+
+    <h2>The Image</h2>
+
+    <p>
+        The image is inserted using <b class="red">img</b> tag. The only difference from others images is that you must add a <b class="red">usemap</b> attribute:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+            </h3>
+        </fieldset>
+    </div>
+
+    <p>
+        The <b class="re">usemap</b> value starts with a hash tag <b class="red">#</b> followed by the name of the image amp, and is used to create a relationship between the image and the image map.
+    </p>
+
+    <div class="nota">
+        <p><b>Tip:</b> You can use any image as an image map!</p>
+    </div>
+    <hr>
+
+    <h2>Create Image Map</h2>
+    <p>
+        Then, add a <b class="red">map</b> element.
+    </p>
+    <p>
+        The <b class="red">map</b> element is used to create am i,age map, and is linked to the image by using the required <b class="red">name</b> attribute:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;map name="workmap"&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <p>
+        The <b class="red">name</b> attribute must have the same value as the <b class="red">img</b>'s <b class="red">usemap</b> attribute
+    </p>
+    <hr>
+
+    <h2>The Areas</h2>
+
+    <p>
+        Then, add the clickable areas.
+    </p>
+    <p>
+        A clickable area is defined using an <b class="red">area</b> element.
+    </p>
+
+    <h3>Shape</h3>
+
+    <p>
+        You must define the shape of the clickable area, and you can choose one of these values:
+    </p>
+    <ul>
+        <li>
+            <b class="red">rect</b> - defines a rectangular region
+        </li>
+        <li>
+            <b class="red">circle</b> - defines a circular region
+        </li>
+        <li>
+            <b class="red">poly</b> - defines a polygonal region
+        </li>
+        <li>
+            <b class="red">default</b> - defines the entire region
+        </li>
+    </ul>
+    <p>
+        You must also define some coordinates to be able to place the clickale area onto the image.
+    </p>
+    <hr>
+    <h3>Shape='rect'</h3>
+    <p>
+        The coordinates for <b class="red">shape='rect'</b> come in pairs, one for the x-axis and one for the y-axis.
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h3>
+                &lt;img src="imagens/y-s-rg3RHn4NPPs-unsplash.jpg" alt="chacal" usemap="#workmap" width="410px" height="500px"&gt;
+                <br><br>
+                &lt;map name="workmap"&gt;
+                <br><br>
+                    &emsp;&#9;&lt;area shape="rect" coords="100, 100, 260, 390" href="#" alt=""&gt;
+                <br><br>
+                &lt;/map&gt;
+            </h3>
+        </fieldset>
+    </div>
+    <div class="imagem">
+        <img src="imagens/y-s-rg3RHn4NPPs-unsplash.jpg" alt="chacal" usemap="#workmap" width="410px" height="500px">
+        <map name="workmap" onclick="alert('Imagem de um LOBO')">
+            <area shape="rect" coords="100, 100, 260, 390" href="" alt="">
+        </map>
+    </div>
+    <hr>
+
+    <h3>Shape='circle'</h3>
+    <p>
+        To add a circle area, first locate the coodinates of the center of the circle:
+    </p>
+    <p>
+        The specify the radius of the circle
+    </p>
+    <hr>
+
+    <h3>Shape='poly'</h3>
+    <p>The <b class="red">shape='poly'</b>contain severals coordinate points, wich creates a shape formed with straight lines (a polygon).</p> 
+    <p>
+        This can be used to create any shape.
+    </p>
+    <p>
+        The coordinates come in pairs, one for the x-axis and one for the y-axis.
+    </p>
+    <hr>
+
+    <h2>Image Map and JavaScript</h2>
+    <p>
+        A clickable area can also trigger a JavaScript function.
+    </p>
+    <p>
+        Add a <b class="red">click</b> event to the <b class="red">area</b> element to execute a JavaScript function.
+    </p>
+    <hr>
+    <h2>Summary</h2>
+    <ul>
+        <li>
+            Use the HTML <b class="red">map</b> element to define an image map
+        </li>
+        <li>
+            Use the HTML <b class="red">area</b> element to define the clickable areas in the image
+        </li>
+        <li>
+            Use the HTMl <b class="red">usemap</b> attribute of the <b class="red">img</b> element to point to an image map
+        </li>
+    </ul>
+
+    <button style="margin-top: 10px;">
+        <a href="background-images.html" style="text-decoration: none;">Next</a>
+    </button>
+</body>
+
+</html>
